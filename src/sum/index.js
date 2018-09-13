@@ -10,6 +10,12 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
+  if (!isNaN(parseFloat(a)) && isFinite(a)
+      && !isNaN(parseFloat(b)) && isFinite(b)) {
+    return a + b
+  } else {
+    throw Error
+  }
   /* your logic here...*/
 };
 

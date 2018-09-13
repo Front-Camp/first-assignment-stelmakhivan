@@ -12,6 +12,15 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  return  arr.reduce((a, b) => {
+    if(isNaN(+a)) {
+      a = 0
+    }
+    if(isNaN(+b)) {
+      b = 0
+    }
+    return +a + +b
+  }, 0);
 };
 
 export default sumElements;

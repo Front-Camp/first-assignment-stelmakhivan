@@ -9,6 +9,10 @@
  */
 const truncate = (str, length = 0, replacer = '...') => {
   /* your logic here...*/
+  let arr = str.split('');
+  arr.splice(-length-3);
+  arr.push('...');
+  return arr.join('')
 };
 
 export default truncate;

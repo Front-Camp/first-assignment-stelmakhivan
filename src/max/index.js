@@ -8,6 +8,11 @@
 */
 const max = arr => {
   /* your logic here...*/
+  for(let i = 0; i < arr.length; i++) {
+    if(isFinite(arr[i]) && !isNaN(arr[i])) {
+      return Math.max(...arr);
+    }
+  }
 };
 
 export default max;
